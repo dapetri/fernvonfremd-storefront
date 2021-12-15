@@ -118,7 +118,37 @@ const MainMenu: React.FC<MainMenuProps> = ({ demoMode }) => {
                   <Media
                     query={{ minWidth: mediumScreen }}
                     render={() =>
-                      items.map(item => {
+
+                      /**
+                       * TODO: insert nav buttons 1) Anleitung 2) Spiel kaufen
+                       */
+                      <>
+                      <li
+                        data-test="mainMenuItem"
+                        className={classNames({
+                          "main-menu__item": true,
+                          "main-menu__nav-dropdown": true,
+                        })}
+                      >
+                        <Link to={"/anleitung"}>
+                         Spielanleitung
+                        </Link>
+                      </li>
+
+                      <li
+                        data-test="mainMenuItem"
+                        className={classNames({
+                          "main-menu__item": true,
+                          "main-menu__nav-dropdown": true,
+                        })}
+                      >
+                        <Link to={"/shop"}>
+                         Kaufen
+                        </Link>
+                      </li>
+
+                      </>
+                      /* items.map(item => {
                         const hasSubNavigation = !!item?.children?.length;
                         return (
                           <li
@@ -139,7 +169,7 @@ const MainMenu: React.FC<MainMenuProps> = ({ demoMode }) => {
                             />
                           </li>
                         );
-                      })
+                      }) */
                     }
                   />
                   <Online>
