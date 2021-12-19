@@ -143,7 +143,7 @@ const MainMenu: React.FC<MainMenuProps> = ({ demoMode }) => {
                         })}
                       >
                         <Link to={"/shop"}>
-                         Kaufen
+                         Shop
                         </Link>
                       </li>
 

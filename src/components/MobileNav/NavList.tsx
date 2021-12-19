@@ -103,7 +103,7 @@ class NavList extends React.PureComponent<NavListProps, NavListState> {
             "side-nav__menu-item": true,
           })}
         >
-        <Link to={"/"} className="side-nav__menu-item-link">
+        <Link to={"/shop"} className="side-nav__menu-item-link">
           Shop
         </Link>
         </li>
