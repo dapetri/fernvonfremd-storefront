@@ -116,8 +116,8 @@ const View: React.FC<RouteComponentProps<{ id: string }>> = ({ match }) => {
     <TypedProductDetailsQuery
       loaderFull
       variables={{
-        // id: getGraphqlIdFromDBId(match.params.id, "Product"),
-        id: "UHJvZHVjdDo3Mg=="
+        id: getGraphqlIdFromDBId("128", "Product"),
+        // id: "UHJvZHVjdDoxMjg="
       }}
       errorPolicy="all"
       // key={match.params.id}

@@ -80,9 +80,12 @@ const Page: React.FC<
 
   return (
     <div className="product-page">
-      <div className="container">
+      {/* <div className="container">
         <Breadcrumbs breadcrumbs={populateBreadcrumbs(product)} />
-      </div> 
+      </div>  */}
+      <div className="head">
+
+      </div>
       <div className="container">
         <div className="product-page__product">
           <script className="structured-data-list" type="application/ld+json">
@@ -128,7 +131,7 @@ const Page: React.FC<
           />
         </div>
       </div>
-      <OtherProducts products={product.category.products.edges} />
+{/*       <OtherProducts products={product.category.products.edges} /> */}
     </div>
   );
 };
