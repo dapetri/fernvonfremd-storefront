@@ -250,7 +250,7 @@ const MainMenu: React.FC<MainMenuProps> = ({ demoMode }) => {
         </div>
 
         <div className="main-menu__right">
-          <ul>
+          <ul className="ul">
             <Online>
               <Media
                 query={{ minWidth: smallScreen }}
@@ -339,7 +339,7 @@ const MainMenu: React.FC<MainMenuProps> = ({ demoMode }) => {
                 />
               </li>
             </Offline>
-            <li
+            {/* <li
               data-test="menuSearchOverlayLink"
               className="main-menu__search"
               onClick={() =>
@@ -355,7 +355,7 @@ const MainMenu: React.FC<MainMenuProps> = ({ demoMode }) => {
                 )}
               />
               <ReactSVG path={searchImg} />
-            </li>
+            </li> */}
           </ul>
         </div>
       </nav>

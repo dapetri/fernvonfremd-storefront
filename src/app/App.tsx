@@ -15,6 +15,7 @@ import "../globalStyles/scss/index.scss";
 import { Routes } from "./routes";
 import Notifications from "./Notifications";
 
+
 const App: React.FC = () => {
   const { tokenRefreshing, tokenVerifying } = useAuth();
 
