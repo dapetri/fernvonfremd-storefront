@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 
 import { NavLink } from "..";
 import { TypedSecondaryMenuQuery } from "./queries";
@@ -10,7 +11,15 @@ class Nav extends React.PureComponent {
     return (
       <footer className="footer-nav">
         <div className="container">
-          <TypedSecondaryMenuQuery>
+          <div className="footer-nav__section">
+            <h4 className="footer-nav__section-header">
+              <Link to={"/impressum"}>
+                Impressum
+              </Link>
+            </h4>
+
+          </div>
+          {/* <TypedSecondaryMenuQuery>
             {({ data }) => {
               return data.shop.navigation.secondary.items.map(item => (
                 <div className="footer-nav__section" key={item.id}>
@@ -27,7 +36,7 @@ class Nav extends React.PureComponent {
                 </div>
               ));
             }}
-          </TypedSecondaryMenuQuery>
+          </TypedSecondaryMenuQuery> */}
         </div>
       </footer>
     );
