@@ -142,7 +142,7 @@ const MainMenu: React.FC<MainMenuProps> = ({ demoMode }) => {
                           "main-menu__nav-dropdown": true,
                         })}
                       >
-                        <Link to={"/shop"}>
+                        <Link to={"/"}>
                          Shop
                         </Link>
                       </li>
