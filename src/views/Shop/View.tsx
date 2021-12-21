@@ -13,8 +13,10 @@ import NetworkStatus from "../../components/NetworkStatus";
 import { getGraphqlIdFromDBId, maybe } from "../../core/utils";
 import { ProductDetails_product } from "./gqlTypes/ProductDetails";
 import Page from "./Page";
-import { TypedProductDetailsQuery } from "./queries";
+import { TypedFvfInfoQuery, TypedProductDetailsQuery } from "./queries";
 import { IProps } from "./types";
+
+
 
 const canDisplay = (product: ProductDetails_product) =>
   maybe(
@@ -111,13 +113,24 @@ const PageWithQueryAttributes: React.FC<IProps> = props => {
 
 const View: React.FC<RouteComponentProps<{ id: string }>> = ({ match }) => {
   const { addItem, items } = useCart();
+  // let d
+
+  // <TypedFvfInfoQuery>
+  //   {({ data, loading }) => (
+  //     d = data
+      
+  //   )}
+  // </TypedFvfInfoQuery>
+
+  // console.log(d);
+  
   
   return (
     <TypedProductDetailsQuery
       loaderFull
       variables={{
-        id: getGraphqlIdFromDBId("128", "Product"),
-        // id: "UHJvZHVjdDoxMjg="
+        // id: getGraphqlIdFromDBId("128", "Product"),
+        id: "UHJvZHVjdDoxMjk="
       }}
       errorPolicy="all"
       // key={match.params.id}
@@ -157,3 +170,5 @@ const View: React.FC<RouteComponentProps<{ id: string }>> = ({ match }) => {
 };
 
 export default View;
+
+

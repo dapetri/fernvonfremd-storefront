@@ -1,5 +1,7 @@
 import gql from "graphql-tag";
 import { TypedQuery } from "../../core/queries";
+import { FvfInfo, FvfInfo_products_edges_node } from "./gqlTypes/FvfInfo";
+import { fvfInfo } from "./gqlTypes/fvfInfo";
 import {
   ProductDetails,
   ProductDetailsVariables,
@@ -150,6 +152,20 @@ export const productDetailsQuery = gql`
   }
 `;
 
+
+const fvfInfoQuery = gql`
+  query FvfInfo {
+    products (first: 1, filter: {search: "fernvonfremd"}) {
+      edges {
+        node {
+          id
+          name
+        }
+      }
+    }
+  }
+`
+
 // FIXME: Check how to handle pagination of `productVariants` in the UI.
 // We need allow the user view  all cart items regardless of pagination.
 export const productVariantsQuery = gql`
@@ -168,6 +184,11 @@ export const productVariantsQuery = gql`
     }
   }
 `;
+
+export const TypedFvfInfoQuery = TypedQuery<
+  FvfInfo,
+  FvfInfo_products_edges_node
+>(fvfInfoQuery);
 
 export const TypedProductDetailsQuery = TypedQuery<
   ProductDetails,
