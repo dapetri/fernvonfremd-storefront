@@ -4,6 +4,7 @@
   z-index: 3;
 }
 
+
 .main-menu {
   align-items: center;
   align-items: stretch;
@@ -46,10 +47,10 @@
     align-self: center;
 
     svg {
-      width: 4rem;
+      width: 12rem;
 
       @media (min-width: $small-screen) {
-        width: 6rem;
+        width: 12rem;
       }
     }
   }
@@ -61,12 +62,12 @@
 
     a {
       text-decoration: none;
-      color: $base-font-color;
+      color: $fvf3;
       position: relative;
       transition: 0.3s;
 
       &:hover {
-        color: $turquoise;
+        color: $fvf2;
       }
     }
   }
@@ -75,6 +76,10 @@
     border-right: 1px solid $gray-light;
     cursor: pointer;
     padding: $spacer;
+
+    svg * {
+      fill: $fvf3;
+    }
 
     &--hover {
       display: none;
@@ -109,11 +114,12 @@
 
     svg * {
       transition: 0.3s;
+      fill: $fvf3;
     }
 
     &:hover {
       svg * {
-        fill: $turquoise;
+        fill: $fvf2;
       }
     }
 
@@ -129,7 +135,7 @@
       position: absolute;
       top: -0.3rem;
       right: 0.6rem;
-      background-color: $blue;
+      background-color: $fvf3;
       border-radius: 1rem;
       padding: 0 0.3rem;
       min-width: 1rem;
@@ -144,7 +150,7 @@
 
   &__user {
     &--active * {
-      fill: $turquoise;
+      fill: $fvf3;
       fill-rule: inherit;
     }
   }
@@ -193,9 +199,9 @@
     }
 
     &:hover {
-      color: $turquoise;
+      color: $fvf2;
       svg * {
-        fill: $turquoise;
+        fill: $fvf3;
       }
     }
 
@@ -291,4 +297,8 @@
       }
     }
   }
+}
+
+.ul {
+  height: 100%;
 }

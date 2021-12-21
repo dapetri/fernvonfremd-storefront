@@ -1,5 +1,5 @@
 // colors
-$base-font-color: #323232;
+$base-font-color: #000;
 $black: #000;
 $blue-dark: #190c4e;
 $blue: #21125e;
@@ -10,15 +10,19 @@ $green: #3ed256;
 $rose: #fe6e76;
 $turquoise-dark: #55c4b3;
 $turquoise-light: #f1f5f5;
-$turquoise: #51e9d2;
+$turquoise: #C10016; 
 $white: #fff;
 $blue-overlay: rgba($blue, 0.15);
 $autofillColor: rgb(250, 255, 189);
 $autofillColorSelected: rgb(232, 240, 254);
-$darkGreen: #06847b;
+$darkGreen: #C10016;
+
+$fvf1: #F25D62;
+$fvf2: #ED1C24;
+$fvf3: #c10016;
 
 // typography
-$base-font-family: "Inter", sans-serif;
+$base-font-family: "Gidole", sans-serif;
 $base-font-size: 1rem; // 16px
 $small-font-size: 0.875rem; // 14px
 $base-line-height: 1.25rem; // 20px

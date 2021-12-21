@@ -11,6 +11,7 @@ import NavItem, { INavItem } from "./NavItem";
 
 import backImg from "../../images/arrow-back.svg";
 import logoImg from "../../images/logo.svg";
+import classNames from "classnames";
 
 interface NavListProps {
   items: INavItem[];
@@ -85,7 +86,7 @@ class NavList extends React.PureComponent<NavListProps, NavListState> {
                 <span />
               </span>
             </li>
-            <li className="side-nav__menu-item">
+{/*             <li className="side-nav__menu-item">
               <Link
                 to={baseUrl}
                 className="side-nav__menu-item-link"
@@ -93,18 +94,37 @@ class NavList extends React.PureComponent<NavListProps, NavListState> {
               >
                 <FormattedMessage {...commonMessages.home} />
               </Link>
-            </li>
+            </li> */}
           </>
         )}
 
-        {displayedItems.map(item => (
+        <li
+          className={classNames({
+            "side-nav__menu-item": true,
+          })}
+        >
+        <Link to={"/shop"} className="side-nav__menu-item-link">
+          Shop
+        </Link>
+        </li>
+
+        <li
+          className={classNames({
+            "side-nav__menu-item": true,
+          })}
+        >
+        <Link to={"/anleitung"} className="side-nav__menu-item-link">
+          Spielanleitung
+        </Link>
+        </li>
+{/*         {displayedItems.map(item => (
           <NavItem
             key={item.id}
             hideOverlay={hideOverlay}
             showSubItems={this.handleShowSubItems}
             {...item}
           />
-        ))}
+        ))} */}
       </ul>
     );
   }
