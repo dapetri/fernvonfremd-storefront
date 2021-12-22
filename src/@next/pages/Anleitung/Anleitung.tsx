@@ -9,6 +9,7 @@ export const Anleitung: React.FC<IProps> = ({}: IProps) => {
         <Body>
             <h1>HALLO FREMDER</h1> 
             <h2>WIE MAN SPIELT</h2>
+            <text></text>
             {/* <ReactMarkdown children={'# HALLO FREMDER'} />
             <ReactMarkdown children={'### ( WIE MAN SPIELT )'} />
             <ReactMarkdown children={'**Kennst du wirklich deinen besten Freund? Wie gut kennst du deine Mutter oder deine Schwester, oder sonst jemanden dem du nahestehst?**'} />
