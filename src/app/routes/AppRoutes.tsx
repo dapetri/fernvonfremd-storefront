@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Route, Switch } from "react-router-dom";
 
-import { CartPage, CheckoutPage, PasswordReset, ThankYouPage } from "@pages";
+import { CartPage, CheckoutPage, PasswordReset, ThankYouPage, Anleitung } from "@pages";
 import { CheckoutLogin, NotFound } from "../../components";
 import UserAccount, * as accountPaths from "../../userAccount/routes";
 import { OrderDetails } from "../../userAccount/views";
@@ -23,6 +23,7 @@ export const Routes: React.FC = () => (
     {/* <Route exact path={paths.baseUrl} component={HomePage} /> */}
     {/* <Route path={paths.searchUrl} component={SearchPage} /> */}
     <Route exact path={paths.shopUrl} component={ShopPage} />
+    <Route path={paths.anleitungUrl} component={Anleitung} />
     <Route path={paths.impressumUrl} component={ImpressumPage} />
     {/* <Route path={paths.categoryUrl} component={CategoryPage} />
     <Route path={paths.collectionUrl} component={CollectionPage} />

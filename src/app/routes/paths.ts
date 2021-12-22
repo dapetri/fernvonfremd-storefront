@@ -17,3 +17,4 @@ export const checkoutUrl = `${baseUrl}checkout/`;
 export const orderFinalizedUrl = `${baseUrl}order-finalized/`;
 export const shopUrl = `${baseUrl}`;
 export const impressumUrl = `${baseUrl}impressum/`;
+export const anleitungUrl = `${baseUrl}anleitung/`;

@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
 export const Breadcrumbs = styled.div``;
 
 export const Title = styled.div`
+  // font-family: Gidole, sans-serif;
   margin-top: 80px;
   margin-bottom: 60px;
 `;
