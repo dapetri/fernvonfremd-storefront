@@ -5,7 +5,7 @@ export const Dot = styled.div<{ done?: boolean }>`
   border-radius: 50%;
   width: 12px;
   height: 12px;
-  border: 6px solid ${props => (props.done ? "#06847B" : "#c2c2c2")};
+  border: 6px solid ${props => (props.done ? "#F25D62" : "#c2c2c2")};
 `;
 
 export const ActiveDot = styled.div`

@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
 export const Link = styled.a`
   path {
     transition: 0.3s;
+    fill: ${props => props.theme.colors.primary};
   }
 
   &:hover {

@@ -16,10 +16,11 @@ export const Primary = styled.button<{
   fullWidth?: boolean;
   size: Size;
 }>`
+  border-radius: 10px;
   background-color: ${props =>
     props.theme.button.colors[props.color].background};
   padding: ${props => padding[props.size]};
-  border: none;
+  // border: none;
   transition: 0.3s;
   outline: none;
   cursor: pointer;

@@ -23,7 +23,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => (
   <button
     data-test={testingContext}
-    className={`button ${secondary ? "secondary" : ""} ${className}`}
+    className={`button ${secondary ? "secondary" : "secondary2"} ${className}`}
     ref={btnRef}
     type={type as ButtonType}
     {...otherProps}

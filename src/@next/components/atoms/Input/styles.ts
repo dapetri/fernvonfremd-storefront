@@ -30,6 +30,7 @@ const getEdgeColor = (
 export const Wrapper = styled.div<WrapperProps>`
   display: flex;
   border: 1px solid ${props => getEdgeColor(props)};
+  border-radius: 10px;
   color: ${props => getEdgeColor(props)};
   outline: ${props =>
     props.active ? `1px solid ${getEdgeColor(props)};` : "none"};

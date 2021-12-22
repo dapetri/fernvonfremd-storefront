@@ -27,10 +27,14 @@ export const darkGreen = "#06847B";
 export const secondaryGrey = "#EBF1F6";
 export const secondaryGreyDark = "#9D9FB1";
 export const secondaryBlue = "#036DFF";
+export const fvf1 = "#F25D63";
+export const fvf2 = "#ED1C24";
+export const fvf3 = "#C10016";
+
 
 // theme colors
 export const theme = {
-  activeMenuOption: darkGreen,
+  activeMenuOption: fvf3,
   autofill: autofillColor,
   autofillSelected: autofillColorSelected,
   bannerBackground: secondaryGrey,
@@ -44,31 +48,31 @@ export const theme = {
   divider: grayLight,
   dividerDark: grayMedium,
   error: rose,
-  hoverLightBackground: turquoiseLight,
+  hoverLightBackground: fvf2,
   light: grayLight,
   lightFont: gray,
   listAttributeName: baseFontColorSemiTransparent,
   listBullet: darkGreen,
   overlay: overlayColor,
-  primary: turquoise,
-  primaryDark: turquoiseDark,
+  primary: fvf3,
+  primaryDark: fvf2,
   primaryLight: turquoiseLight,
   primaryTransparent: turquoiseTransparent,
-  secondary: blue,
-  secondaryDark: blueDark,
+  secondary: fvf3,
+  secondaryDark: fvf3,
   secondaryLight: blueLight,
   secondaryOverlay: blueOverlay,
   secondaryOverlayDark: blueOverlayDark,
   success: green,
-  tabTitle: darkGreen,
+  tabTitle: fvf3,
   tableDivider: tabelGray,
   tabsBorder: baseFontColorTransparent,
-  thumbnailBorder: darkGreen,
+  thumbnailBorder: fvf3,
   white,
 };
 
 // typography
-export const baseFontFamily = "'Inter', sans-serif";
+export const baseFontFamily = "'Gidole', sans-serif";
 export const baseFontSize = "1rem"; // 16px
 export const baseLineHeight = "1.25rem"; // 20px
 export const boldFontWeight = 600;
