@@ -4,7 +4,7 @@ import { generatePageUrl } from "./utils";
 
 export const BASE_URL = "/";
 export const PRODUCTS_PER_PAGE = 6;
-export const SUPPORT_EMAIL = "support@example.com";
+export const SUPPORT_EMAIL = "info@fernvonfremd.de";
 export const PROVIDERS = {
   BRAINTREE: {
     label: "Braintree",
@@ -86,9 +86,9 @@ export const SOCIAL_MEDIA_IT = [
 export const META_DEFAULTS = {
   custom: [],
   description:
-    "Open-source PWA storefront built with Saleor's e-commerce GraphQL API. Written with React and TypeScript.",
+    "Home page von fernvonfremd. Hier kannst du das Spiel kaufen und seine Spielanleitung anschauen.",
   image: `${window.location.origin}${require("../images/logo.svg")}`,
-  title: "fernvonfremd home",
+  title: "fernvonfremd",
   type: "website",
   url: window.location.origin,
 };
