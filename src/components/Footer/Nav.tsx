@@ -15,6 +15,9 @@ class Nav extends React.PureComponent {
             <h4 className="footer-nav__section-header">
               <Link to="/impressum">Impressum</Link>
             </h4>
+            <h4 className="footer-nav__section-header">
+              <Link to="/widerrufsbelehrung">Widerrufsbelehrung</Link>
+            </h4>
           </div>
           {/* <TypedSecondaryMenuQuery>
             {({ data }) => {

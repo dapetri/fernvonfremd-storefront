@@ -8,6 +8,7 @@ import {
   ThankYouPage,
   Anleitung,
   Impressum,
+  Widerrufsbelehrung,
 } from "@pages";
 import { CheckoutLogin, NotFound } from "../../components";
 import UserAccount, * as accountPaths from "../../userAccount/routes";
@@ -30,6 +31,7 @@ export const Routes: React.FC = () => (
     <Route exact path={paths.shopUrl} component={ShopPage} />
     <Route path={paths.anleitungUrl} component={Anleitung} />
     <Route path={paths.impressumUrl} component={Impressum} />
+    <Route path={paths.widerrufsbelehrungUrl} component={Widerrufsbelehrung} />
     {/* <Route path={paths.categoryUrl} component={CategoryPage} />
     <Route path={paths.collectionUrl} component={CollectionPage} />
     <Route path={paths.productUrl} component={ProductPage} /> */}
