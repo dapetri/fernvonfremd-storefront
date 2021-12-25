@@ -186,6 +186,28 @@ export const Widerrufsbelehrung: React.FC<IProps> = ({}: IProps) => {
           folgenden Dienstleistung (*)
         </div>
         <br />
+        Bestellt am (*): <br />
+        ______________________________________ <br />
+        <br />
+        Erhalten am (*): <br />
+        ______________________________________ <br />
+        <br />
+        Name des/der Verbraucher(s): <br />
+        ______________________________________ <br />
+        <br />
+        Anschrift des/der Verbraucher(s): <br />
+        ______________________________________ <br />
+        <br />
+        Unterschrift des/der Verbraucher(s) <br />
+        (nur bei Mitteilung auf Papier):
+        <br />
+        ______________________________________ <br />
+        <br />
+        Datum: <br />
+        ______________________________________ <br />
+        <br />
+        <br />
+        (*) Unzutreffendes streichen
       </Body>
     </>
   );

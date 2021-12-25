@@ -19,3 +19,4 @@ export const shopUrl = `${baseUrl}`;
 export const impressumUrl = `${baseUrl}impressum/`;
 export const anleitungUrl = `${baseUrl}anleitung/`;
 export const widerrufsbelehrungUrl = `${baseUrl}widerrufsbelehrung/`;
+export const agbUrl = `${baseUrl}agb/`;

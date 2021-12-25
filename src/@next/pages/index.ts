@@ -7,3 +7,4 @@ export * from "./ThankYouPage";
 export * from "./Anleitung";
 export * from "./Impressum";
 export * from "./Widerrufsbelehrung";
+export * from "./AGB";

@@ -7,6 +7,7 @@ import {
   PasswordReset,
   ThankYouPage,
   Anleitung,
+  AGB,
   Impressum,
   Widerrufsbelehrung,
 } from "@pages";
@@ -32,6 +33,7 @@ export const Routes: React.FC = () => (
     <Route path={paths.anleitungUrl} component={Anleitung} />
     <Route path={paths.impressumUrl} component={Impressum} />
     <Route path={paths.widerrufsbelehrungUrl} component={Widerrufsbelehrung} />
+    <Route path={paths.agbUrl} component={AGB} />
     {/* <Route path={paths.categoryUrl} component={CategoryPage} />
     <Route path={paths.collectionUrl} component={CollectionPage} />
     <Route path={paths.productUrl} component={ProductPage} /> */}
