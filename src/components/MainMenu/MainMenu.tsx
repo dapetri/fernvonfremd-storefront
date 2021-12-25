@@ -131,7 +131,7 @@ const MainMenu: React.FC<MainMenuProps> = ({ demoMode }) => {
                               "main-menu__nav-dropdown": true,
                             })}
                           >
-                            <Link to={"/anleitung"}>Spielanleitung</Link>
+                            <Link to="/anleitung">Spielanleitung</Link>
                           </li>
 
                           <li
@@ -141,7 +141,7 @@ const MainMenu: React.FC<MainMenuProps> = ({ demoMode }) => {
                               "main-menu__nav-dropdown": true,
                             })}
                           >
-                            <Link to={"/"}>Shop</Link>
+                            <Link to="/">Shop</Link>
                           </li>
                         </>
                       )

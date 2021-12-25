@@ -1,7 +1,14 @@
 import * as React from "react";
 import { Route, Switch } from "react-router-dom";
 
-import { CartPage, CheckoutPage, PasswordReset, ThankYouPage, Anleitung, Impressum } from "@pages";
+import {
+  CartPage,
+  CheckoutPage,
+  PasswordReset,
+  ThankYouPage,
+  Anleitung,
+  Impressum,
+} from "@pages";
 import { CheckoutLogin, NotFound } from "../../components";
 import UserAccount, * as accountPaths from "../../userAccount/routes";
 import { OrderDetails } from "../../userAccount/views";
@@ -13,7 +20,6 @@ import { Account, AccountConfirm } from "../../views/Account";
 // import { ProductPage } from "../../views/Product";
 // import { SearchPage } from "../../views/Search";
 import { ShopPage } from "../../views/Shop";
-
 
 import * as paths from "./paths";
 

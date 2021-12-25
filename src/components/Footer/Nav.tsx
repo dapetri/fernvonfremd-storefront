@@ -13,11 +13,8 @@ class Nav extends React.PureComponent {
         <div className="container">
           <div className="footer-nav__section">
             <h4 className="footer-nav__section-header">
-              <Link to={"/impressum"}>
-                Impressum
-              </Link>
+              <Link to="/impressum">Impressum</Link>
             </h4>
-
           </div>
           {/* <TypedSecondaryMenuQuery>
             {({ data }) => {
