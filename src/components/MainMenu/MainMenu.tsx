@@ -19,14 +19,14 @@ import {
 } from "..";
 import * as appPaths from "../../app/routes";
 import { maybe } from "../../core/utils";
-import NavDropdown from "./NavDropdown";
+// import NavDropdown from "./NavDropdown";
 import { TypedMainMenuQuery } from "./queries";
 
 import cartImg from "../../images/cart.svg";
 import hamburgerHoverImg from "../../images/hamburger-hover.svg";
 import hamburgerImg from "../../images/hamburger.svg";
 import logoImg from "../../images/logo.svg";
-import searchImg from "../../images/search.svg";
+// import searchImg from "../../images/search.svg";
 import userImg from "../../images/user.svg";
 import {
   mediumScreen,
@@ -53,7 +53,8 @@ const MainMenu: React.FC<MainMenuProps> = ({ demoMode }) => {
       items.reduce((prevVal, currVal) => prevVal + currVal.quantity, 0)) ||
     0;
 
-  const [activeDropdown, setActiveDropdown] = useState<string>(undefined);
+  // const [activeDropdown, setActiveDropdown] = useState<string>(undefined);
+  const [activeDropdown] = useState<string>(undefined);
 
   useEffect(() => {
     if (activeDropdown) {
@@ -63,17 +64,17 @@ const MainMenu: React.FC<MainMenuProps> = ({ demoMode }) => {
     }
   }, [activeDropdown]);
 
-  const showDropdownHandler = (itemId: string, hasSubNavigation: boolean) => {
-    if (hasSubNavigation) {
-      setActiveDropdown(itemId);
-    }
-  };
+  // const showDropdownHandler = (itemId: string, hasSubNavigation: boolean) => {
+  //   if (hasSubNavigation) {
+  //     setActiveDropdown(itemId);
+  //   }
+  // };
 
-  const hideDropdownHandler = () => {
-    if (activeDropdown) {
-      setActiveDropdown(undefined);
-    }
-  };
+  // const hideDropdownHandler = () => {
+  //   if (activeDropdown) {
+  //     setActiveDropdown(undefined);
+  //   }
+  // };
 
   return (
     <header
@@ -117,37 +118,33 @@ const MainMenu: React.FC<MainMenuProps> = ({ demoMode }) => {
                   />
                   <Media
                     query={{ minWidth: mediumScreen }}
-                    render={() =>
+                    render={
+                      () => (
+                        /**
+                         * TODO: insert nav buttons 1) Anleitung 2) Spiel kaufen
+                         */
+                        <>
+                          <li
+                            data-test="mainMenuItem"
+                            className={classNames({
+                              "main-menu__item": true,
+                              "main-menu__nav-dropdown": true,
+                            })}
+                          >
+                            <Link to={"/anleitung"}>Spielanleitung</Link>
+                          </li>
 
-                      /**
-                       * TODO: insert nav buttons 1) Anleitung 2) Spiel kaufen
-                       */
-                      <>
-                      <li
-                        data-test="mainMenuItem"
-                        className={classNames({
-                          "main-menu__item": true,
-                          "main-menu__nav-dropdown": true,
-                        })}
-                      >
-                        <Link to={"/anleitung"}>
-                         Spielanleitung
-                        </Link>
-                      </li>
-
-                      <li
-                        data-test="mainMenuItem"
-                        className={classNames({
-                          "main-menu__item": true,
-                          "main-menu__nav-dropdown": true,
-                        })}
-                      >
-                        <Link to={"/"}>
-                         Shop
-                        </Link>
-                      </li>
-
-                      </>
+                          <li
+                            data-test="mainMenuItem"
+                            className={classNames({
+                              "main-menu__item": true,
+                              "main-menu__nav-dropdown": true,
+                            })}
+                          >
+                            <Link to={"/"}>Shop</Link>
+                          </li>
+                        </>
+                      )
                       /* items.map(item => {
                         const hasSubNavigation = !!item?.children?.length;
                         return (

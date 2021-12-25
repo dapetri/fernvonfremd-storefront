@@ -1,19 +1,18 @@
 import * as React from "react";
 import { Route, Switch } from "react-router-dom";
 
-import { CartPage, CheckoutPage, PasswordReset, ThankYouPage, Anleitung } from "@pages";
+import { CartPage, CheckoutPage, PasswordReset, ThankYouPage, Anleitung, Impressum } from "@pages";
 import { CheckoutLogin, NotFound } from "../../components";
 import UserAccount, * as accountPaths from "../../userAccount/routes";
 import { OrderDetails } from "../../userAccount/views";
 import { Account, AccountConfirm } from "../../views/Account";
-import { ArticlePage } from "../../views/Article";
-import { CategoryPage } from "../../views/Category";
-import { CollectionPage } from "../../views/Collection";
-import { HomePage } from "../../views/Home";
-import { ProductPage } from "../../views/Product";
-import { SearchPage } from "../../views/Search";
+// import { ArticlePage } from "../../views/Article";
+// import { CategoryPage } from "../../views/Category";
+// import { CollectionPage } from "../../views/Collection";
+// import { HomePage } from "../../views/Home";
+// import { ProductPage } from "../../views/Product";
+// import { SearchPage } from "../../views/Search";
 import { ShopPage } from "../../views/Shop";
-import { ImpressumPage } from "../../views/Impressum";
 
 
 import * as paths from "./paths";
@@ -24,7 +23,7 @@ export const Routes: React.FC = () => (
     {/* <Route path={paths.searchUrl} component={SearchPage} /> */}
     <Route exact path={paths.shopUrl} component={ShopPage} />
     <Route path={paths.anleitungUrl} component={Anleitung} />
-    <Route path={paths.impressumUrl} component={ImpressumPage} />
+    <Route path={paths.impressumUrl} component={Impressum} />
     {/* <Route path={paths.categoryUrl} component={CategoryPage} />
     <Route path={paths.collectionUrl} component={CollectionPage} />
     <Route path={paths.productUrl} component={ProductPage} /> */}

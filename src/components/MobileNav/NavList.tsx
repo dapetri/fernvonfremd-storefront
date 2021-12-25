@@ -1,13 +1,14 @@
 import "./scss/index.scss";
 
 import * as React from "react";
-import { FormattedMessage } from "react-intl";
+// import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
 import ReactSVG from "react-svg";
-import { commonMessages } from "@temp/intl";
+// import { commonMessages } from "@temp/intl";
 
 import { baseUrl } from "../../app/routes";
-import NavItem, { INavItem } from "./NavItem";
+// import NavItem, { INavItem } from "./NavItem";
+import { INavItem } from "./NavItem";
 
 import backImg from "../../images/arrow-back.svg";
 import logoImg from "../../images/logo.svg";
@@ -62,7 +63,10 @@ class NavList extends React.PureComponent<NavListProps, NavListState> {
 
   render() {
     const { hideOverlay } = this.props;
-    const { displayedItems, parent } = this.state;
+    const {
+      // displayedItems,
+      parent,
+    } = this.state;
 
     return (
       <ul>
@@ -86,7 +90,7 @@ class NavList extends React.PureComponent<NavListProps, NavListState> {
                 <span />
               </span>
             </li>
-{/*             <li className="side-nav__menu-item">
+            {/*             <li className="side-nav__menu-item">
               <Link
                 to={baseUrl}
                 className="side-nav__menu-item-link"
@@ -103,9 +107,9 @@ class NavList extends React.PureComponent<NavListProps, NavListState> {
             "side-nav__menu-item": true,
           })}
         >
-        <Link to={"/shop"} className="side-nav__menu-item-link">
-          Shop
-        </Link>
+          <Link to={"/shop"} className="side-nav__menu-item-link">
+            Shop
+          </Link>
         </li>
 
         <li
@@ -113,11 +117,11 @@ class NavList extends React.PureComponent<NavListProps, NavListState> {
             "side-nav__menu-item": true,
           })}
         >
-        <Link to={"/anleitung"} className="side-nav__menu-item-link">
-          Spielanleitung
-        </Link>
+          <Link to={"/anleitung"} className="side-nav__menu-item-link">
+            Spielanleitung
+          </Link>
         </li>
-{/*         {displayedItems.map(item => (
+        {/*         {displayedItems.map(item => (
           <NavItem
             key={item.id}
             hideOverlay={hideOverlay}

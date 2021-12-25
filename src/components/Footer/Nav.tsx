@@ -1,8 +1,8 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 
-import { NavLink } from "..";
-import { TypedSecondaryMenuQuery } from "./queries";
+// import { NavLink } from "..";
+// import { TypedSecondaryMenuQuery } from "./queries";
 
 import "./scss/index.scss";
 

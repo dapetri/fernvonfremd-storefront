@@ -206,11 +206,11 @@ function getKeyValueJson(messages: LocaleMessages): Record<string, string> {
 }
 
 export function setLocale(newLocale: Locale) {
-  currentLocale = newLocale
+  currentLocale = newLocale;
 }
 
 export function getLocale() {
-  return (currentLocale)
+  return currentLocale;
 }
 
 const defaultLocale = Locale.EN;

@@ -7,28 +7,28 @@ import AddToCartSection from "@components/organisms/AddToCartSection";
 import { smallScreen } from "../../globalStyles/scss/variables.scss";
 
 import {
-  Breadcrumbs,
+  // Breadcrumbs,
   OverlayContext,
   OverlayTheme,
   OverlayType,
 } from "../../components";
-import { generateCategoryUrl, generateProductUrl } from "../../core/utils";
+// import { generateCategoryUrl, generateProductUrl } from "../../core/utils";
 import GalleryCarousel from "./GalleryCarousel";
-import OtherProducts from "./Other";
+// import OtherProducts from "./Other";
 
 import { structuredData } from "../../core/SEO/Product/structuredData";
 import { IProps } from "./types";
 
-const populateBreadcrumbs = product => [
-  {
-    link: generateCategoryUrl(product.category.id, product.category.name),
-    value: product.category.name,
-  },
-  {
-    link: generateProductUrl(product.id, product.name),
-    value: product.name,
-  },
-];
+// const populateBreadcrumbs = product => [
+//   {
+//     link: generateCategoryUrl(product.category.id, product.category.name),
+//     value: product.category.name,
+//   },
+//   {
+//     link: generateProductUrl(product.id, product.name),
+//     value: product.name,
+//   },
+// ];
 
 const Page: React.FC<
   IProps & {

@@ -10,13 +10,13 @@ import { useHistory } from "react-router-dom";
 import { Loader } from "@components/atoms";
 import { MetaWrapper, NotFound, OfflinePlaceholder } from "../../components";
 import NetworkStatus from "../../components/NetworkStatus";
-import { getGraphqlIdFromDBId, maybe } from "../../core/utils";
+// import { getGraphqlIdFromDBId, maybe } from "../../core/utils";
+import { maybe } from "../../core/utils";
 import { ProductDetails_product } from "./gqlTypes/ProductDetails";
 import Page from "./Page";
-import { TypedFvfInfoQuery, TypedProductDetailsQuery } from "./queries";
+import { TypedProductDetailsQuery } from "./queries";
+// import { TypedFvfInfoQuery } from "./queries";
 import { IProps } from "./types";
-
-
 
 const canDisplay = (product: ProductDetails_product) =>
   maybe(
@@ -110,7 +110,6 @@ const PageWithQueryAttributes: React.FC<IProps> = props => {
   );
 };
 
-
 const View: React.FC<RouteComponentProps<{ id: string }>> = ({ match }) => {
   const { addItem, items } = useCart();
   // let d
@@ -118,13 +117,12 @@ const View: React.FC<RouteComponentProps<{ id: string }>> = ({ match }) => {
   // <TypedFvfInfoQuery>
   //   {({ data, loading }) => (
   //     d = data
-      
+
   //   )}
   // </TypedFvfInfoQuery>
 
   // console.log(d);
-  
-  
+
   return (
     <TypedProductDetailsQuery
       loaderFull
@@ -133,7 +131,7 @@ const View: React.FC<RouteComponentProps<{ id: string }>> = ({ match }) => {
         // t14
         // id: "UHJvZHVjdDoxMjk="
         // remote
-        id: "UHJvZHVjdDoy"
+        id: "UHJvZHVjdDoy",
       }}
       errorPolicy="all"
       // key={match.params.id}
@@ -173,5 +171,3 @@ const View: React.FC<RouteComponentProps<{ id: string }>> = ({ match }) => {
 };
 
 export default View;
-
-

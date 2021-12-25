@@ -2,11 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { IProps } from "./types";
 
-export const Anleitung: React.FC<IProps> = ({}: IProps) => {
+export const Impressum: React.FC<IProps> = ({}: IProps) => {
   return (
     <Body>
-      <h1>HALLO FREMDER</h1>
-      <h2>WIE MAN SPIELT</h2>
+      <h1>Contact:</h1>
       {/* <ReactMarkdown children={'# HALLO FREMDER'} />
       <ReactMarkdown children={'### ( WIE MAN SPIELT )'} />
       <ReactMarkdown children={'**Kennst du wirklich deinen besten Freund? Wie gut kennst du deine Mutter oder deine Schwester, oder sonst jemanden dem du nahestehst?**'} />
@@ -21,7 +20,7 @@ export const Anleitung: React.FC<IProps> = ({}: IProps) => {
 };
 
 const Body = styled.div`
-  background: linear-gradient(180deg, #f25d62 0%, #ed1c24 50%, #c10016 100%);
+  background: #fff;
   position: relative;
   padding-top: 60px;
   padding-left: 15%;
@@ -30,6 +29,5 @@ const Body = styled.div`
   right: 0;
   bottom: 0;
   left: 0;
-
-  color: #fff;
+  color: #000;
 `;

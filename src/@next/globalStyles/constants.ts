@@ -31,7 +31,6 @@ export const fvf1 = "#F25D63";
 export const fvf2 = "#ED1C24";
 export const fvf3 = "#C10016";
 
-
 // theme colors
 export const theme = {
   activeMenuOption: fvf3,
