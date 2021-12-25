@@ -1,8 +1,27 @@
 import React from "react";
 import styled from "styled-components";
+
+import { smallScreen } from "@styles/constants";
+import { useWindowDimensions } from "@hooks";
 import { IProps } from "./types";
 
 export const Impressum: React.FC<IProps> = ({}: IProps) => {
+  const { width } = useWindowDimensions();
+  // @ts-ignore
+  const margine = width < smallScreen ? "5%" : "15%";
+
+  const Body = styled.div`
+    background: #fff;
+    position: relative;
+    padding-top: 60px;
+    padding-left: ${margine};
+    padding-right: ${margine};
+    padding-bottom: 80px;
+    color: #000;
+
+    text-align: justify;
+  `;
+
   return (
     <Body>
       <h3>Impressum</h3>
@@ -69,19 +88,3 @@ export const Impressum: React.FC<IProps> = ({}: IProps) => {
     </Body>
   );
 };
-
-const Body = styled.div`
-  background: #fff;
-  position: relative;
-  padding-top: 60px;
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-bottom: 80px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  color: #000;
-
-  text-align: justify;
-`;

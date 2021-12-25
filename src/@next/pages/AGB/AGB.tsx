@@ -4,7 +4,7 @@ import { useWindowDimensions } from "@hooks";
 import { IProps } from "./types";
 import { fvf3, smallScreen } from "../../globalStyles/constants";
 
-export const Widerrufsbelehrung: React.FC<IProps> = ({}: IProps) => {
+export const AGB: React.FC<IProps> = ({}: IProps) => {
   const { width } = useWindowDimensions();
   // @ts-ignore
   const margine = width < smallScreen ? "5%" : "15%";
