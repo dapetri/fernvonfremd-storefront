@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router-dom";
 
 import {
   CartPage,
+  Urheberrecht,
   CheckoutPage,
   PasswordReset,
   ThankYouPage,
@@ -34,6 +35,7 @@ export const Routes: React.FC = () => (
     <Route path={paths.impressumUrl} component={Impressum} />
     <Route path={paths.widerrufsbelehrungUrl} component={Widerrufsbelehrung} />
     <Route path={paths.agbUrl} component={AGB} />
+    <Route path={paths.urheberrechtUrl} component={Urheberrecht} />
     {/* <Route path={paths.categoryUrl} component={CategoryPage} />
     <Route path={paths.collectionUrl} component={CollectionPage} />
     <Route path={paths.productUrl} component={ProductPage} /> */}
