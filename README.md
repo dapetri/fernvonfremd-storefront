@@ -28,13 +28,13 @@ These instructions will get you a copy of the project up and running on your loc
 Clone the repository:
 
 ```
-git clone https://github.com/mirumee/saleor-storefront.git
+git clone https://github.com/dapetri/fernvonfremd-storefront.git
 ```
 
 Enter the project directory:
 
 ```
-cd saleor-storefront
+cd fernvonfremd-storefront
 ```
 
 #### Using stable release
@@ -45,7 +45,6 @@ To use the official stable release, checkout to a release tag:
 $ git checkout 2.10.4
 ```
 
-See the list of all releases here: https://github.com/mirumee/saleor-storefront/releases/
 
 #### Using development version
 
