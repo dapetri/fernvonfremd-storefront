@@ -1,6 +1,4 @@
-# Saleor Storefront
-
-![1 copy 2x](https://user-images.githubusercontent.com/5421321/47798207-30aeea00-dd28-11e8-9398-3d8426836a83.png)
+# Fern von Fremd Storefront
 
 _**Note:** This project is beta quality. We don't advise using it in production._
 
@@ -13,14 +11,6 @@ A GraphQL-powered, PWA, single-page application storefront for [Saleor](https://
 - Saleor GraphQL API integration
 - Single-page application experience
 - [Braintree Payment Gateway](https://www.braintreepayments.com/) integration
-
-## Demo
-
-See the [public demo](http://demo.saleor.io) of Saleor Storefront!
-
-Or launch the demo on a free Heroku instance.
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## Getting Started
 
